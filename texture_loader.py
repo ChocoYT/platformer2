@@ -1,7 +1,7 @@
 import pygame
-import os
+from os import getcwd
 
-path = f"{os.getcwd()}\\platformer2"
+path = getcwd()
 
 class Texture_loader():
     def __init__(self):

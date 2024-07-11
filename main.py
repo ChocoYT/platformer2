@@ -1,7 +1,7 @@
 import pygame
 import sys
 import configparser
-import os
+from os import getcwd
 
 from map import Map
 from texture_loader import Texture_loader
@@ -9,7 +9,7 @@ from texture_loader import Texture_loader
 # main game loop
 if __name__ == '__main__':
 
-    path = f"{os.getcwd()}\\platformer2"
+    path = getcwd()
 
     # load the config
     defaults = configparser.ConfigParser()
